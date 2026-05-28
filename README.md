@@ -1,16 +1,108 @@
-# React + Vite
+# GitHub Profile Analyzer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web application that analyzes GitHub profiles using the GitHub Public API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Search any GitHub user
+* View profile information
+* View followers, following, and public repositories
+* Display top repositories
+* Analyze most-used programming languages
+* Handles invalid usernames
+* Handles API rate limits and network errors
+* Loading state while fetching data
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+* React
+* Axios
+* React Toastify
+* GitHub REST API
+* Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone <your-repository-url>
+```
+
+Move into project folder:
+
+```bash
+cd github-profile-analyzer
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+---
+
+## Run the Project
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+Open the localhost URL shown in terminal.
+
+Example:
+
+```txt
+http://localhost:5173
+```
+
+---
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## Error Handling
+
+The project handles:
+
+* Empty username input
+* Invalid GitHub usernames
+* GitHub API rate limits
+* Network/API failures
+* Loading states during slow API responses
+
+---
+
+## API Used
+
+GitHub Public REST API:
+
+```txt
+https://api.github.com/users/:username
+```
+
+---
+
+## Folder Structure
+
+```txt
+src/
+ ├── components/
+ │    └── Header.jsx
+ │
+ ├── App.jsx
+ ├── App.css
+ └── main.jsx
+```
