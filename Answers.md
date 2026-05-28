@@ -81,9 +81,8 @@ The weakest part of the submission is the lack of automated testing.
 
 With another day, I would:
 
-* Add unit tests using Vitest or Jest
+
 * Add loading skeleton components
 * Improve accessibility
-* Add repository sorting and filtering
 * Improve responsive design for smaller screens
 * Refactor the application into smaller reusable components
