@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0d1117;
+  font-family: sans-serif;
+}
+
+#logo {
+  width: 35px;
+  height: 35px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.75rem 1.5rem;
+  background-color: #161b22;
+  border-bottom: 0.5px solid #30363d;
+}
+
+header h3 {
+  color: #e6edf3;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.container p {
+  color: #8b949e;
+  margin-bottom: 1.5rem;
+}
+
+.searchBox {
+  display: flex;
+  gap: 0;
+}
+
+input {
+  padding: 0.6rem 1rem;
+  background-color: #161b22;
+  outline: none;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #30363d;
+  width: 18rem;
+  color: white;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #58a6ff;
+}
+
+button {
+  background-color: #238636;
+  outline: none;
+  border-radius: 0 10px 10px 0;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #2ea043;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #2ea043;
+}
+
+button:disabled {
+  background-color: #1a4a28;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.parent {
+  display: flex;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  align-items: flex-start;
+}
+
+.profileCard {
+  background: #161b22;
+  border: 0.5px solid #30363d;
+  border-radius: 12px;
+  padding: 1.5rem;
+  min-width: 200px;
+  max-width: 220px;
+  text-align: center;
+}
+
+.profilePic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 2px solid #30363d;
+}
+
+.profileCard h2 {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.profileCard .handle {
+  color: #58a6ff;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.profileCard .bio {
+  color: #8b949e;
+  font-size: 13px;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.statsRow {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+  border-top: 0.5px solid #21262d;
+  border-bottom: 0.5px solid #21262d;
+  padding: 0.75rem 0;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.statNumber {
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.statLabel {
+  color: #8b949e;
+  font-size: 11px;
+}
+
+.joinedDate {
+  color: #8b949e;
+  font-size: 12px;
+  margin-top: 0.5rem;
+}
+
+.rightPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.reposSection h3,
+.langSection h3 {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.repoCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #161b22;
+  border: 0.5px solid #30363d;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: border-color 0.2s;
+}
+
+.repoCard:hover {
+  border-color: #58a6ff;
+}
+
+.repoName {
+  color: #58a6ff;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 4px;
+}
+
+.repoDesc {
+  color: #8b949e;
+  font-size: 12px;
+  margin: 0;
+}
+
+.repoStats {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  color: #8b949e;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.repoLang {
+  color: #3fb950;
+}
+
+.langSection {
+  background: #161b22;
+  border: 0.5px solid #30363d;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.langList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.langBadge {
+  background: #21262d;
+  color: #8b949e;
+  font-size: 13px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 0.5px solid #30363d;
+}
